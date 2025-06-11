@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="circle">
+      <div class="hand second"></div>
+      <div class="hand hours"></div>
+      <div class="hand minutes"></div>
+    </div>
+
+    <style>
+      body,
+      html {
+        margin: 0;
+        background-color: red;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        border: 20px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+          inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+
+      .hand {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-0%, -50%) rotate(-90deg);
+        transform-origin: 0% 50%;
+        height: 6px;
+        border-radius: 3px;
+      }
+
+      .second {
+        z-index: 2;
+        background: violet;
+        width: 35%;
+      }
+
+      .minutes {
+        z-index: 1;
+        background: yellow;
+        width: 40%;
+      }
+
+      .hours {
+        z-index: 0;
+        background: black;
+        width: 45%;
+      }
+    </style>
+
+    <script>
+      const secondHand = document.querySelector(".second");
+      const minutesHand = document.querySelector(".minutes");
+      const hoursHand = document.querySelector(".hours");
+
+      function setDate() {
+        const time = new Date();
+        const seconds = time.getSeconds();
+        const minutes = time.getMinutes();
+        const hour = time.getHours();
+
+        const secondsDegrees = (seconds / 60) * 360 + 90;
+        const minsDegrees = (minutes / 60) * 360 + (seconds / 60) * 6 + 90;
+        const hourDegrees = (hour / 12) * 360 + (minutes / 60) * 30 + 90;
+
+        secondHand.style.transform = `translate(-0%, -50%) rotate(${secondsDegrees}deg)`;
+        minutesHand.style.transform = `translate(-0%, -50%) rotate(${minsDegrees}deg)`;
+        hoursHand.style.transform = `translate(-0%, -50%) rotate(${hourDegrees}deg)`;
+      }
+
+      setInterval(setDate, 1000);
+      setDate();
+    </script>
+  </body>
+</html>
