@@ -1,1 +1,2 @@
+# Time-clock
 This is the second project from 30 days 30 projects of js. THis project is about displaying a clock. This time i did not create a repo and then clone it in my pc but instead created a repo in my pc and then pushing it on github hope it works.
