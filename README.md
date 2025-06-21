@@ -2,8 +2,9 @@
 
 A real-time digital clock implemented in JavaScript, HTML, and CSS.
 
-## 🧰 Demo
-Open `index.html` in any browser to see the clock in action.
+## 🎮 Live Demo
+[Click here to try it!](## 🎮 Live Demo
+[Click here to try it!](https://imritesh24.github.io/Time-clock/))
 
 ## 🔧 Installation
 ```bash
@@ -11,6 +12,4 @@ git clone https://github.com/imritesh24/Time-clock.git
 cd Time-clock
 open index.html
 
-## 🎮 Live Demo
-[Click here to try it!](## 🎮 Live Demo
-[Click here to try it!](https://imritesh24.github.io/Time-clock/))
+
