@@ -1,2 +1,12 @@
-# Time-clock
-This is the second project from 30 days 30 projects of js. THis project is about displaying a clock. This time i did not create a repo and then clone it in my pc but instead created a repo in my pc and then pushing it on github hope it works. Javascript was little harder than the previous one.
+# Time‑clock ⏱️
+
+A real-time digital clock implemented in JavaScript, HTML, and CSS.
+
+## 🧰 Demo
+Open `index.html` in any browser to see the clock in action.
+
+## 🔧 Installation
+```bash
+git clone https://github.com/imritesh24/Time-clock.git
+cd Time-clock
+open index.html
