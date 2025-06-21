@@ -4,7 +4,7 @@ A real-time digital clock implemented in JavaScript, HTML, and CSS.
 
 ## 🎮 Live Demo
 
-[Click here to try it!](https://imritesh24.github.io/Time-clock/))
+[Click here to try it!](https://imritesh24.github.io/Time-clock/)
 
 ## 🔧 Installation
 ```bash
